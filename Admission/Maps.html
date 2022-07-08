@@ -1,0 +1,2233 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_c4049f5013604d4eb7ff9037bec93966 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_c4049f5013604d4eb7ff9037bec93966" ></div>
+        
+</body>
+<script>    
+    
+            var map_c4049f5013604d4eb7ff9037bec93966 = L.map(
+                "map_c4049f5013604d4eb7ff9037bec93966",
+                {
+                    center: [37.541, 126.986],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 2,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_f34e7cd99ade448a89b2b9ae00b7e42f = L.tileLayer(
+                "https://stamen-tiles-{s}.a.ssl.fastly.net/terrain/{z}/{x}/{y}.jpg",
+                {"attribution": "Map tiles by \u003ca href=\"http://stamen.com\"\u003eStamen Design\u003c/a\u003e, under \u003ca href=\"http://creativecommons.org/licenses/by/3.0\"\u003eCC BY 3.0\u003c/a\u003e. Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://creativecommons.org/licenses/by-sa/3.0\"\u003eCC BY SA\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_c4049f5013604d4eb7ff9037bec93966);
+        
+    
+            var marker_7ecfa616ae14468790c149f80cfd87f0 = L.marker(
+                [23.9036873, 121.0793705],
+                {}
+            ).addTo(map_c4049f5013604d4eb7ff9037bec93966);
+        
+    
+            marker_7ecfa616ae14468790c149f80cfd87f0.bindTooltip(
+                `<div>
+                     타이완
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2f20725d08934edca05042608ea6e46d = L.marker(
+                [-8.874217, 125.727539],
+                {}
+            ).addTo(map_c4049f5013604d4eb7ff9037bec93966);
+        
+    
+            marker_2f20725d08934edca05042608ea6e46d.bindTooltip(
+                `<div>
+                     동티모르
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d57c71cc8de046a5858379a5d749d830 = L.marker(
+                [19.85627, 102.495496],
+                {}
+            ).addTo(map_c4049f5013604d4eb7ff9037bec93966);
+        
+    
+            marker_d57c71cc8de046a5858379a5d749d830.bindTooltip(
+                `<div>
+                     라오스
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5fe86184ee0444c0bfb4a1d295911224 = L.marker(
+                [4.210484, 101.975766],
+                {}
+            ).addTo(map_c4049f5013604d4eb7ff9037bec93966);
+        
+    
+            marker_5fe86184ee0444c0bfb4a1d295911224.bindTooltip(
+                `<div>
+                     말레이시아
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_579103b458bd47a4b7a7282c075a1960 = L.marker(
+                [22.198745, 113.543873],
+                {}
+            ).addTo(map_c4049f5013604d4eb7ff9037bec93966);
+        
+    
+            marker_579103b458bd47a4b7a7282c075a1960.bindTooltip(
+                `<div>
+                     마카오
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_292115ec4461436ab0abb88af7d9bf9d = L.marker(
+                [46.862496, 103.846656],
+                {}
+            ).addTo(map_c4049f5013604d4eb7ff9037bec93966);
+        
+    
+            marker_292115ec4461436ab0abb88af7d9bf9d.bindTooltip(
+                `<div>
+                     몽골
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c43d345adc6b48dbbba1dc643b313322 = L.marker(
+                [21.916221, 95.955974],
+                {}
+            ).addTo(map_c4049f5013604d4eb7ff9037bec93966);
+        
+    
+            marker_c43d345adc6b48dbbba1dc643b313322.bindTooltip(
+                `<div>
+                     미얀마
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_03a98dc3442e462d990c3d784e4d71d8 = L.marker(
+                [23.684994, 90.356331],
+                {}
+            ).addTo(map_c4049f5013604d4eb7ff9037bec93966);
+        
+    
+            marker_03a98dc3442e462d990c3d784e4d71d8.bindTooltip(
+                `<div>
+                     방글라데시
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d366109d28df403bbdabde6d15ba4a21 = L.marker(
+                [14.058324, 108.277199],
+                {}
+            ).addTo(map_c4049f5013604d4eb7ff9037bec93966);
+        
+    
+            marker_d366109d28df403bbdabde6d15ba4a21.bindTooltip(
+                `<div>
+                     베트남
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d805e0ec102f494fa9a2556d319c4e71 = L.marker(
+                [4.535277, 114.727669],
+                {}
+            ).addTo(map_c4049f5013604d4eb7ff9037bec93966);
+        
+    
+            marker_d805e0ec102f494fa9a2556d319c4e71.bindTooltip(
+                `<div>
+                     브루나이
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e6bd5d589ac24aae9af85671e55d6da5 = L.marker(
+                [1.352083, 103.819836],
+                {}
+            ).addTo(map_c4049f5013604d4eb7ff9037bec93966);
+        
+    
+            marker_e6bd5d589ac24aae9af85671e55d6da5.bindTooltip(
+                `<div>
+                     싱가포르
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f4ca00fe2e5147e1bd73af1e6219ebf8 = L.marker(
+                [20.593684, 78.96288],
+                {}
+            ).addTo(map_c4049f5013604d4eb7ff9037bec93966);
+        
+    
+            marker_f4ca00fe2e5147e1bd73af1e6219ebf8.bindTooltip(
+                `<div>
+                     인도
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e532041eae524a22891efedcccb70d86 = L.marker(
+                [-0.789275, 113.921327],
+                {}
+            ).addTo(map_c4049f5013604d4eb7ff9037bec93966);
+        
+    
+            marker_e532041eae524a22891efedcccb70d86.bindTooltip(
+                `<div>
+                     인도네시아
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0363c96874c4486780df42495b7a7dc1 = L.marker(
+                [36.204824, 138.252924],
+                {}
+            ).addTo(map_c4049f5013604d4eb7ff9037bec93966);
+        
+    
+            marker_0363c96874c4486780df42495b7a7dc1.bindTooltip(
+                `<div>
+                     일본
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1d39aba122aa4b729ddc1a3fd9ed5f6b = L.marker(
+                [35.86166, 104.195397],
+                {}
+            ).addTo(map_c4049f5013604d4eb7ff9037bec93966);
+        
+    
+            marker_1d39aba122aa4b729ddc1a3fd9ed5f6b.bindTooltip(
+                `<div>
+                     중국
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e125d4909e88488c8593b11510de337d = L.marker(
+                [12.565679, 104.990963],
+                {}
+            ).addTo(map_c4049f5013604d4eb7ff9037bec93966);
+        
+    
+            marker_e125d4909e88488c8593b11510de337d.bindTooltip(
+                `<div>
+                     캄보디아
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f9ee47f74821487dbb1b75b84bcd9c23 = L.marker(
+                [15.870032, 100.992541],
+                {}
+            ).addTo(map_c4049f5013604d4eb7ff9037bec93966);
+        
+    
+            marker_f9ee47f74821487dbb1b75b84bcd9c23.bindTooltip(
+                `<div>
+                     태국
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9ead72fb124f46a2b23876d73718c349 = L.marker(
+                [30.375321, 69.34511599999999],
+                {}
+            ).addTo(map_c4049f5013604d4eb7ff9037bec93966);
+        
+    
+            marker_9ead72fb124f46a2b23876d73718c349.bindTooltip(
+                `<div>
+                     파키스탄
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e6a2ff48330b4460b2a511acf5c4a300 = L.marker(
+                [12.879721, 121.774017],
+                {}
+            ).addTo(map_c4049f5013604d4eb7ff9037bec93966);
+        
+    
+            marker_e6a2ff48330b4460b2a511acf5c4a300.bindTooltip(
+                `<div>
+                     필리핀
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_122b9c5f7d9b4982920e19ca3b26997b = L.marker(
+                [22.3193039, 114.1693611],
+                {}
+            ).addTo(map_c4049f5013604d4eb7ff9037bec93966);
+        
+    
+            marker_122b9c5f7d9b4982920e19ca3b26997b.bindTooltip(
+                `<div>
+                     홍콩
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3042d4fb274c4b97b7f61f54930db031 = L.marker(
+                [4.860416, -58.93018],
+                {}
+            ).addTo(map_c4049f5013604d4eb7ff9037bec93966);
+        
+    
+            marker_3042d4fb274c4b97b7f61f54930db031.bindTooltip(
+                `<div>
+                     가이아나
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e7144e5feeb04002bcdd392be4215012 = L.marker(
+                [15.783471, -90.23075899999999],
+                {}
+            ).addTo(map_c4049f5013604d4eb7ff9037bec93966);
+        
+    
+            marker_e7144e5feeb04002bcdd392be4215012.bindTooltip(
+                `<div>
+                     과테말라
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9e1010062f374247bbade59121e43116 = L.marker(
+                [12.1165, -61.67899999999999],
+                {}
+            ).addTo(map_c4049f5013604d4eb7ff9037bec93966);
+        
+    
+            marker_9e1010062f374247bbade59121e43116.bindTooltip(
+                `<div>
+                     그레나다
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_cb572140640347ff9ce5bda002d8617a = L.marker(
+                [12.865416, -85.207229],
+                {}
+            ).addTo(map_c4049f5013604d4eb7ff9037bec93966);
+        
+    
+            marker_cb572140640347ff9ce5bda002d8617a.bindTooltip(
+                `<div>
+                     니카라과
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ea8bb58602f745d4893459e412686bf5 = L.marker(
+                [18.735693, -70.162651],
+                {}
+            ).addTo(map_c4049f5013604d4eb7ff9037bec93966);
+        
+    
+            marker_ea8bb58602f745d4893459e412686bf5.bindTooltip(
+                `<div>
+                     도미니카공화국
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a662c0677a274d9c93b9e72e2ec8655f = L.marker(
+                [15.414999, -61.37097600000001],
+                {}
+            ).addTo(map_c4049f5013604d4eb7ff9037bec93966);
+        
+    
+            marker_a662c0677a274d9c93b9e72e2ec8655f.bindTooltip(
+                `<div>
+                     도미니카연방
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_200be5d52c214836ae771f174f8e87f2 = L.marker(
+                [23.634501, -102.552784],
+                {}
+            ).addTo(map_c4049f5013604d4eb7ff9037bec93966);
+        
+    
+            marker_200be5d52c214836ae771f174f8e87f2.bindTooltip(
+                `<div>
+                     멕시코
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_96df8cf8e7ae48f081a243e229b43e79 = L.marker(
+                [37.09024, -95.712891],
+                {}
+            ).addTo(map_c4049f5013604d4eb7ff9037bec93966);
+        
+    
+            marker_96df8cf8e7ae48f081a243e229b43e79.bindTooltip(
+                `<div>
+                     미국
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_08cf93fbc5064bc89d38a1bb25cfd720 = L.marker(
+                [13.193887, -59.543198],
+                {}
+            ).addTo(map_c4049f5013604d4eb7ff9037bec93966);
+        
+    
+            marker_08cf93fbc5064bc89d38a1bb25cfd720.bindTooltip(
+                `<div>
+                     바베이도스
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e879e5ebab5c4232939efa8d45f1b422 = L.marker(
+                [25.03428, -77.39627999999999],
+                {}
+            ).addTo(map_c4049f5013604d4eb7ff9037bec93966);
+        
+    
+            marker_e879e5ebab5c4232939efa8d45f1b422.bindTooltip(
+                `<div>
+                     바하마
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1b8cfbf3408a46919756325a94b31b02 = L.marker(
+                [6.42375, -66.58973],
+                {}
+            ).addTo(map_c4049f5013604d4eb7ff9037bec93966);
+        
+    
+            marker_1b8cfbf3408a46919756325a94b31b02.bindTooltip(
+                `<div>
+                     베네수엘라
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_13bbefad8b874538a2fbafe2b36d672f = L.marker(
+                [17.189877, -88.49765],
+                {}
+            ).addTo(map_c4049f5013604d4eb7ff9037bec93966);
+        
+    
+            marker_13bbefad8b874538a2fbafe2b36d672f.bindTooltip(
+                `<div>
+                     벨리즈
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7ce26512c5f24619931f7dd71841b09b = L.marker(
+                [-16.290154, -63.58865299999999],
+                {}
+            ).addTo(map_c4049f5013604d4eb7ff9037bec93966);
+        
+    
+            marker_7ce26512c5f24619931f7dd71841b09b.bindTooltip(
+                `<div>
+                     볼리비아
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8c9bbc40523b4d278d38a4147dcc87e4 = L.marker(
+                [-14.235004, -51.92528],
+                {}
+            ).addTo(map_c4049f5013604d4eb7ff9037bec93966);
+        
+    
+            marker_8c9bbc40523b4d278d38a4147dcc87e4.bindTooltip(
+                `<div>
+                     브라질
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2dfa9a2dbc5a4546abe5c2eedd4e98cb = L.marker(
+                [37.5180349, -95.1730355],
+                {}
+            ).addTo(map_c4049f5013604d4eb7ff9037bec93966);
+        
+    
+            marker_2dfa9a2dbc5a4546abe5c2eedd4e98cb.bindTooltip(
+                `<div>
+                     세인트
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e35c468db9394e2d917071d91653fcef = L.marker(
+                [36.0206523, -121.5489532],
+                {}
+            ).addTo(map_c4049f5013604d4eb7ff9037bec93966);
+        
+    
+            marker_e35c468db9394e2d917071d91653fcef.bindTooltip(
+                `<div>
+                     루시아
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_92e850ce15d94b688b39f309e6a373f3 = L.marker(
+                [37.5180349, -95.1730355],
+                {}
+            ).addTo(map_c4049f5013604d4eb7ff9037bec93966);
+        
+    
+            marker_92e850ce15d94b688b39f309e6a373f3.bindTooltip(
+                `<div>
+                     세인트
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b57ee8d66e94464d9b4ee703e8be624d = L.marker(
+                [40.2941827, -79.4000573],
+                {}
+            ).addTo(map_c4049f5013604d4eb7ff9037bec93966);
+        
+    
+            marker_b57ee8d66e94464d9b4ee703e8be624d.bindTooltip(
+                `<div>
+                     빈센트
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c8b7a15757af480b83236140747720d9 = L.marker(
+                [43.32701489999999, -79.8097442],
+                {}
+            ).addTo(map_c4049f5013604d4eb7ff9037bec93966);
+        
+    
+            marker_c8b7a15757af480b83236140747720d9.bindTooltip(
+                `<div>
+                     그레나딘
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6c545c3a4f094d5d8c315cf645749e2f = L.marker(
+                [37.5180349, -95.1730355],
+                {}
+            ).addTo(map_c4049f5013604d4eb7ff9037bec93966);
+        
+    
+            marker_6c545c3a4f094d5d8c315cf645749e2f.bindTooltip(
+                `<div>
+                     세인트
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_21a6382bd2a74f28bced6bf92256fe53 = L.marker(
+                [45.4728646, -77.4163873],
+                {}
+            ).addTo(map_c4049f5013604d4eb7ff9037bec93966);
+        
+    
+            marker_21a6382bd2a74f28bced6bf92256fe53.bindTooltip(
+                `<div>
+                     키츠
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0c0cf9ba99144dacb195adbe2de4cbb4 = L.marker(
+                [17.1553558, -62.57960259999999],
+                {}
+            ).addTo(map_c4049f5013604d4eb7ff9037bec93966);
+        
+    
+            marker_0c0cf9ba99144dacb195adbe2de4cbb4.bindTooltip(
+                `<div>
+                     네비스
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_46dbfbd059f94d79b349cb4a0a13614e = L.marker(
+                [3.919305, -56.027783],
+                {}
+            ).addTo(map_c4049f5013604d4eb7ff9037bec93966);
+        
+    
+            marker_46dbfbd059f94d79b349cb4a0a13614e.bindTooltip(
+                `<div>
+                     수리남
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e8b818ccb6a144e9a6af2fdf0915e1f3 = L.marker(
+                [-38.416097, -63.61667199999999],
+                {}
+            ).addTo(map_c4049f5013604d4eb7ff9037bec93966);
+        
+    
+            marker_e8b818ccb6a144e9a6af2fdf0915e1f3.bindTooltip(
+                `<div>
+                     아르헨티나
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_807ca357f261491e93562a476a3464b2 = L.marker(
+                [18.971187, -72.285215],
+                {}
+            ).addTo(map_c4049f5013604d4eb7ff9037bec93966);
+        
+    
+            marker_807ca357f261491e93562a476a3464b2.bindTooltip(
+                `<div>
+                     아이티
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ce6e47ff3626434cbd943ee7925d1677 = L.marker(
+                [17.060816, -61.796428],
+                {}
+            ).addTo(map_c4049f5013604d4eb7ff9037bec93966);
+        
+    
+            marker_ce6e47ff3626434cbd943ee7925d1677.bindTooltip(
+                `<div>
+                     앤티가바부다
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7127fb5727014ac1a37a038f8873fba8 = L.marker(
+                [-1.831239, -78.18340599999999],
+                {}
+            ).addTo(map_c4049f5013604d4eb7ff9037bec93966);
+        
+    
+            marker_7127fb5727014ac1a37a038f8873fba8.bindTooltip(
+                `<div>
+                     에콰도르
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_efe6c04d8d324addaa2f4eaa8356d823 = L.marker(
+                [13.794185, -88.89653],
+                {}
+            ).addTo(map_c4049f5013604d4eb7ff9037bec93966);
+        
+    
+            marker_efe6c04d8d324addaa2f4eaa8356d823.bindTooltip(
+                `<div>
+                     엘살바도르
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7d37417c2eb1418894ba6a75c2b934b0 = L.marker(
+                [15.199999, -86.241905],
+                {}
+            ).addTo(map_c4049f5013604d4eb7ff9037bec93966);
+        
+    
+            marker_7d37417c2eb1418894ba6a75c2b934b0.bindTooltip(
+                `<div>
+                     온두라스
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7f587aee88b5496ea18638d82a445b9c = L.marker(
+                [-32.522779, -55.765835],
+                {}
+            ).addTo(map_c4049f5013604d4eb7ff9037bec93966);
+        
+    
+            marker_7f587aee88b5496ea18638d82a445b9c.bindTooltip(
+                `<div>
+                     우루과이
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_662cfbf003314d21b80cfd1ed7d46ea9 = L.marker(
+                [18.109581, -77.297508],
+                {}
+            ).addTo(map_c4049f5013604d4eb7ff9037bec93966);
+        
+    
+            marker_662cfbf003314d21b80cfd1ed7d46ea9.bindTooltip(
+                `<div>
+                     자메이카
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a461fff3262845f686b01491113db6ff = L.marker(
+                [-35.675147, -71.542969],
+                {}
+            ).addTo(map_c4049f5013604d4eb7ff9037bec93966);
+        
+    
+            marker_a461fff3262845f686b01491113db6ff.bindTooltip(
+                `<div>
+                     칠레
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8f85645550c946d5baf6c51316b58047 = L.marker(
+                [56.130366, -106.346771],
+                {}
+            ).addTo(map_c4049f5013604d4eb7ff9037bec93966);
+        
+    
+            marker_8f85645550c946d5baf6c51316b58047.bindTooltip(
+                `<div>
+                     캐나다
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_760142d8d5f346d48ce0ab71b120978c = L.marker(
+                [9.748916999999999, -83.753428],
+                {}
+            ).addTo(map_c4049f5013604d4eb7ff9037bec93966);
+        
+    
+            marker_760142d8d5f346d48ce0ab71b120978c.bindTooltip(
+                `<div>
+                     코스타리카
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7acbba913c8d47f0b9ccc6e224333c64 = L.marker(
+                [4.570868, -74.297333],
+                {}
+            ).addTo(map_c4049f5013604d4eb7ff9037bec93966);
+        
+    
+            marker_7acbba913c8d47f0b9ccc6e224333c64.bindTooltip(
+                `<div>
+                     콜롬비아
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_295d7029a4984705b389d71bb2ca600e = L.marker(
+                [10.691803, -61.222503],
+                {}
+            ).addTo(map_c4049f5013604d4eb7ff9037bec93966);
+        
+    
+            marker_295d7029a4984705b389d71bb2ca600e.bindTooltip(
+                `<div>
+                     트리니다드토바고
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_292e8fa63d1a411e83165fda1b58801f = L.marker(
+                [8.537981, -80.782127],
+                {}
+            ).addTo(map_c4049f5013604d4eb7ff9037bec93966);
+        
+    
+            marker_292e8fa63d1a411e83165fda1b58801f.bindTooltip(
+                `<div>
+                     파나마
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_44f8f15e61a9481db77064f7a75251fe = L.marker(
+                [-23.442503, -58.443832],
+                {}
+            ).addTo(map_c4049f5013604d4eb7ff9037bec93966);
+        
+    
+            marker_44f8f15e61a9481db77064f7a75251fe.bindTooltip(
+                `<div>
+                     파라과이
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_adb54b9cebee43d49e33d96d106facb3 = L.marker(
+                [-9.189967, -75.015152],
+                {}
+            ).addTo(map_c4049f5013604d4eb7ff9037bec93966);
+        
+    
+            marker_adb54b9cebee43d49e33d96d106facb3.bindTooltip(
+                `<div>
+                     페루
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f8b9dcbf4af543ee8de2ee5267505a00 = L.marker(
+                [39.074208, 21.824312],
+                {}
+            ).addTo(map_c4049f5013604d4eb7ff9037bec93966);
+        
+    
+            marker_f8b9dcbf4af543ee8de2ee5267505a00.bindTooltip(
+                `<div>
+                     그리스
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0d445dd3c0534f1db800e820a735834c = L.marker(
+                [52.132633, 5.291265999999999],
+                {}
+            ).addTo(map_c4049f5013604d4eb7ff9037bec93966);
+        
+    
+            marker_0d445dd3c0534f1db800e820a735834c.bindTooltip(
+                `<div>
+                     네덜란드
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_43acc8ac818a4776a811fa229b3bcb9c = L.marker(
+                [60.47202399999999, 8.468945999999999],
+                {}
+            ).addTo(map_c4049f5013604d4eb7ff9037bec93966);
+        
+    
+            marker_43acc8ac818a4776a811fa229b3bcb9c.bindTooltip(
+                `<div>
+                     노르웨이
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b1929daaac82467caf58207d72f743fe = L.marker(
+                [56.26392, 9.501785],
+                {}
+            ).addTo(map_c4049f5013604d4eb7ff9037bec93966);
+        
+    
+            marker_b1929daaac82467caf58207d72f743fe.bindTooltip(
+                `<div>
+                     덴마크
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0a4023c546e94acba00df40a4feec838 = L.marker(
+                [51.165691, 10.451526],
+                {}
+            ).addTo(map_c4049f5013604d4eb7ff9037bec93966);
+        
+    
+            marker_0a4023c546e94acba00df40a4feec838.bindTooltip(
+                `<div>
+                     독일
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3759cd4cd0c34884820d968198cfa135 = L.marker(
+                [56.879635, 24.603189],
+                {}
+            ).addTo(map_c4049f5013604d4eb7ff9037bec93966);
+        
+    
+            marker_3759cd4cd0c34884820d968198cfa135.bindTooltip(
+                `<div>
+                     라트비아
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d4c1859f2a3e4276a4f90013d6016585 = L.marker(
+                [49.815273, 6.129582999999999],
+                {}
+            ).addTo(map_c4049f5013604d4eb7ff9037bec93966);
+        
+    
+            marker_d4c1859f2a3e4276a4f90013d6016585.bindTooltip(
+                `<div>
+                     룩셈부르크
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_446c713fc6094a79a445b371fc798417 = L.marker(
+                [55.169438, 23.881275],
+                {}
+            ).addTo(map_c4049f5013604d4eb7ff9037bec93966);
+        
+    
+            marker_446c713fc6094a79a445b371fc798417.bindTooltip(
+                `<div>
+                     리투아니아
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2915bef0588b4b52aebaa4372239f984 = L.marker(
+                [47.166, 9.555373],
+                {}
+            ).addTo(map_c4049f5013604d4eb7ff9037bec93966);
+        
+    
+            marker_2915bef0588b4b52aebaa4372239f984.bindTooltip(
+                `<div>
+                     리히텐슈타인
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_68be23f2b1034732b2644921b556070a = L.marker(
+                [35.937496, 14.375416],
+                {}
+            ).addTo(map_c4049f5013604d4eb7ff9037bec93966);
+        
+    
+            marker_68be23f2b1034732b2644921b556070a.bindTooltip(
+                `<div>
+                     몰타
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2a162a8d31ed47a087abf93199c32a61 = L.marker(
+                [50.503887, 4.469936],
+                {}
+            ).addTo(map_c4049f5013604d4eb7ff9037bec93966);
+        
+    
+            marker_2a162a8d31ed47a087abf93199c32a61.bindTooltip(
+                `<div>
+                     벨기에
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4f95c6f6513040cf8ef907eb91feaab5 = L.marker(
+                [60.12816100000001, 18.643501],
+                {}
+            ).addTo(map_c4049f5013604d4eb7ff9037bec93966);
+        
+    
+            marker_4f95c6f6513040cf8ef907eb91feaab5.bindTooltip(
+                `<div>
+                     스웨덴
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5160eadb7e564a758e3b17505eaa6948 = L.marker(
+                [46.818188, 8.227511999999999],
+                {}
+            ).addTo(map_c4049f5013604d4eb7ff9037bec93966);
+        
+    
+            marker_5160eadb7e564a758e3b17505eaa6948.bindTooltip(
+                `<div>
+                     스위스
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_eb67c6070bf44ddb8719d976766ca6c3 = L.marker(
+                [40.46366700000001, -3.74922],
+                {}
+            ).addTo(map_c4049f5013604d4eb7ff9037bec93966);
+        
+    
+            marker_eb67c6070bf44ddb8719d976766ca6c3.bindTooltip(
+                `<div>
+                     스페인
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d87c09e4d5ad4bf5a4c3709b676c9444 = L.marker(
+                [48.669026, 19.699024],
+                {}
+            ).addTo(map_c4049f5013604d4eb7ff9037bec93966);
+        
+    
+            marker_d87c09e4d5ad4bf5a4c3709b676c9444.bindTooltip(
+                `<div>
+                     슬로바키아
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0d38e41f5ea841bb942a0be9edea7086 = L.marker(
+                [46.151241, 14.995463],
+                {}
+            ).addTo(map_c4049f5013604d4eb7ff9037bec93966);
+        
+    
+            marker_0d38e41f5ea841bb942a0be9edea7086.bindTooltip(
+                `<div>
+                     슬로베니아
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7706071c89db4608a71de1451307623a = L.marker(
+                [64.963051, -19.020835],
+                {}
+            ).addTo(map_c4049f5013604d4eb7ff9037bec93966);
+        
+    
+            marker_7706071c89db4608a71de1451307623a.bindTooltip(
+                `<div>
+                     아이슬란드
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_01cfafcd6dc740d0a9728eb4b189fcc9 = L.marker(
+                [58.595272, 25.0136071],
+                {}
+            ).addTo(map_c4049f5013604d4eb7ff9037bec93966);
+        
+    
+            marker_01cfafcd6dc740d0a9728eb4b189fcc9.bindTooltip(
+                `<div>
+                     에스토니아
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b546b3587add4480a935b2e7c74eda3d = L.marker(
+                [47.516231, 14.550072],
+                {}
+            ).addTo(map_c4049f5013604d4eb7ff9037bec93966);
+        
+    
+            marker_b546b3587add4480a935b2e7c74eda3d.bindTooltip(
+                `<div>
+                     오스트리아
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_87cca05a0fc74b6288834b632c17cfaf = L.marker(
+                [41.87194, 12.56738],
+                {}
+            ).addTo(map_c4049f5013604d4eb7ff9037bec93966);
+        
+    
+            marker_87cca05a0fc74b6288834b632c17cfaf.bindTooltip(
+                `<div>
+                     이탈리아
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5702fba03aae43f5b3babb6ca0939d6b = L.marker(
+                [49.81749199999999, 15.472962],
+                {}
+            ).addTo(map_c4049f5013604d4eb7ff9037bec93966);
+        
+    
+            marker_5702fba03aae43f5b3babb6ca0939d6b.bindTooltip(
+                `<div>
+                     체코
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_acb4061a880845db9e13e14c1e98816e = L.marker(
+                [39.39987199999999, -8.224454],
+                {}
+            ).addTo(map_c4049f5013604d4eb7ff9037bec93966);
+        
+    
+            marker_acb4061a880845db9e13e14c1e98816e.bindTooltip(
+                `<div>
+                     포르투갈
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c6b01bcc77804d60b2c48cbef3e7cc45 = L.marker(
+                [51.919438, 19.145136],
+                {}
+            ).addTo(map_c4049f5013604d4eb7ff9037bec93966);
+        
+    
+            marker_c6b01bcc77804d60b2c48cbef3e7cc45.bindTooltip(
+                `<div>
+                     폴란드
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5b36cb5a28864ae9b874c2b4aa599057 = L.marker(
+                [46.227638, 2.213749],
+                {}
+            ).addTo(map_c4049f5013604d4eb7ff9037bec93966);
+        
+    
+            marker_5b36cb5a28864ae9b874c2b4aa599057.bindTooltip(
+                `<div>
+                     프랑스
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_69f019ad14844518bfd2ac8eed98e8e4 = L.marker(
+                [61.92410999999999, 25.7481511],
+                {}
+            ).addTo(map_c4049f5013604d4eb7ff9037bec93966);
+        
+    
+            marker_69f019ad14844518bfd2ac8eed98e8e4.bindTooltip(
+                `<div>
+                     핀란드
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4f5f7f4a0411459a9f9f921e85359b74 = L.marker(
+                [47.162494, 19.5033041],
+                {}
+            ).addTo(map_c4049f5013604d4eb7ff9037bec93966);
+        
+    
+            marker_4f5f7f4a0411459a9f9f921e85359b74.bindTooltip(
+                `<div>
+                     헝가리
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c8a6811969934562955bbe0fc6167ff2 = L.marker(
+                [61.52401, 105.318756],
+                {}
+            ).addTo(map_c4049f5013604d4eb7ff9037bec93966);
+        
+    
+            marker_c8a6811969934562955bbe0fc6167ff2.bindTooltip(
+                `<div>
+                     러시아
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2a39d75ea9624b6c83814dcba69a2b37 = L.marker(
+                [45.943161, 24.96676],
+                {}
+            ).addTo(map_c4049f5013604d4eb7ff9037bec93966);
+        
+    
+            marker_2a39d75ea9624b6c83814dcba69a2b37.bindTooltip(
+                `<div>
+                     루마니아
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_76a0bb2acb7a4983a5be6d496d5e8c41 = L.marker(
+                [41.608635, 21.745275],
+                {}
+            ).addTo(map_c4049f5013604d4eb7ff9037bec93966);
+        
+    
+            marker_76a0bb2acb7a4983a5be6d496d5e8c41.bindTooltip(
+                `<div>
+                     북마케도니아
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_bd6e92ea76be4758b3ee149794fc6b57 = L.marker(
+                [43.73841760000001, 7.424615799999999],
+                {}
+            ).addTo(map_c4049f5013604d4eb7ff9037bec93966);
+        
+    
+            marker_bd6e92ea76be4758b3ee149794fc6b57.bindTooltip(
+                `<div>
+                     모나코
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_70b17d1e112044e88eb19836ca4f5f8b = L.marker(
+                [42.708678, 19.37439],
+                {}
+            ).addTo(map_c4049f5013604d4eb7ff9037bec93966);
+        
+    
+            marker_70b17d1e112044e88eb19836ca4f5f8b.bindTooltip(
+                `<div>
+                     몬테네그로
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a7c5c3fd011849e3b4c4f0a4eb5d1b7d = L.marker(
+                [47.411631, 28.369885],
+                {}
+            ).addTo(map_c4049f5013604d4eb7ff9037bec93966);
+        
+    
+            marker_a7c5c3fd011849e3b4c4f0a4eb5d1b7d.bindTooltip(
+                `<div>
+                     몰도바
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6ac69892a81748a2a77fbf652eab0ccc = L.marker(
+                [53.709807, 27.953389],
+                {}
+            ).addTo(map_c4049f5013604d4eb7ff9037bec93966);
+        
+    
+            marker_6ac69892a81748a2a77fbf652eab0ccc.bindTooltip(
+                `<div>
+                     벨라루스
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_cb9f872fa2794dce8380f51b665d76bf = L.marker(
+                [43.915886, 17.679076],
+                {}
+            ).addTo(map_c4049f5013604d4eb7ff9037bec93966);
+        
+    
+            marker_cb9f872fa2794dce8380f51b665d76bf.bindTooltip(
+                `<div>
+                     보스니아헤르체고비나
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2bc68db0f7f4472889d6c514ffd9b29b = L.marker(
+                [42.733883, 25.48583],
+                {}
+            ).addTo(map_c4049f5013604d4eb7ff9037bec93966);
+        
+    
+            marker_2bc68db0f7f4472889d6c514ffd9b29b.bindTooltip(
+                `<div>
+                     불가리아
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a66f184b32484770b1b232b81aca0767 = L.marker(
+                [35.126413, 33.429859],
+                {}
+            ).addTo(map_c4049f5013604d4eb7ff9037bec93966);
+        
+    
+            marker_a66f184b32484770b1b232b81aca0767.bindTooltip(
+                `<div>
+                     사이프러스
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_da7848ac6ef740848b2d3cadb5af869a = L.marker(
+                [43.94236, 12.457777],
+                {}
+            ).addTo(map_c4049f5013604d4eb7ff9037bec93966);
+        
+    
+            marker_da7848ac6ef740848b2d3cadb5af869a.bindTooltip(
+                `<div>
+                     산마리노
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_21a5ac25cbd146aaa5263fabe9d21ca2 = L.marker(
+                [44.016521, 21.005859],
+                {}
+            ).addTo(map_c4049f5013604d4eb7ff9037bec93966);
+        
+    
+            marker_21a5ac25cbd146aaa5263fabe9d21ca2.bindTooltip(
+                `<div>
+                     세르비아
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1e260457010f406ebfc52f3561ee8373 = L.marker(
+                [40.069099, 45.038189],
+                {}
+            ).addTo(map_c4049f5013604d4eb7ff9037bec93966);
+        
+    
+            marker_1e260457010f406ebfc52f3561ee8373.bindTooltip(
+                `<div>
+                     아르메니아
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_25fe3d7f22474abd8ca9580d47a60a02 = L.marker(
+                [53.41291, -8.24389],
+                {}
+            ).addTo(map_c4049f5013604d4eb7ff9037bec93966);
+        
+    
+            marker_25fe3d7f22474abd8ca9580d47a60a02.bindTooltip(
+                `<div>
+                     아일랜드
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b9fef261de8a42809b899262e7f66962 = L.marker(
+                [40.143105, 47.576927],
+                {}
+            ).addTo(map_c4049f5013604d4eb7ff9037bec93966);
+        
+    
+            marker_b9fef261de8a42809b899262e7f66962.bindTooltip(
+                `<div>
+                     아제르바이잔
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2bb61ceb0d584b37a3037d6d7de3f3f2 = L.marker(
+                [42.506285, 1.521801],
+                {}
+            ).addTo(map_c4049f5013604d4eb7ff9037bec93966);
+        
+    
+            marker_2bb61ceb0d584b37a3037d6d7de3f3f2.bindTooltip(
+                `<div>
+                     안도라
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_34958df32e384725b72f6ce6153a0451 = L.marker(
+                [41.153332, 20.168331],
+                {}
+            ).addTo(map_c4049f5013604d4eb7ff9037bec93966);
+        
+    
+            marker_34958df32e384725b72f6ce6153a0451.bindTooltip(
+                `<div>
+                     알바니아
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5f46102f9f324b1892491cd11ea098a9 = L.marker(
+                [55.378051, -3.435973],
+                {}
+            ).addTo(map_c4049f5013604d4eb7ff9037bec93966);
+        
+    
+            marker_5f46102f9f324b1892491cd11ea098a9.bindTooltip(
+                `<div>
+                     영국
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b5ea618f37f64fb88f6d8dcc73558e56 = L.marker(
+                [41.377491, 64.585262],
+                {}
+            ).addTo(map_c4049f5013604d4eb7ff9037bec93966);
+        
+    
+            marker_b5ea618f37f64fb88f6d8dcc73558e56.bindTooltip(
+                `<div>
+                     우즈베키스탄
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ef3ae3a4df584bd2846664278dfae80a = L.marker(
+                [48.379433, 31.1655799],
+                {}
+            ).addTo(map_c4049f5013604d4eb7ff9037bec93966);
+        
+    
+            marker_ef3ae3a4df584bd2846664278dfae80a.bindTooltip(
+                `<div>
+                     우크라이나
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d9fb8f75502949cab13b99499a27a8ad = L.marker(
+                [42.315407, 43.35689199999999],
+                {}
+            ).addTo(map_c4049f5013604d4eb7ff9037bec93966);
+        
+    
+            marker_d9fb8f75502949cab13b99499a27a8ad.bindTooltip(
+                `<div>
+                     조지아
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0da70ce54cc74abcb28956879b58fd9b = L.marker(
+                [48.019573, 66.923684],
+                {}
+            ).addTo(map_c4049f5013604d4eb7ff9037bec93966);
+        
+    
+            marker_0da70ce54cc74abcb28956879b58fd9b.bindTooltip(
+                `<div>
+                     카자흐스탄
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5fdcf1ed981a488092ef8ec6e5a78ef7 = L.marker(
+                [42.6026359, 20.902977],
+                {}
+            ).addTo(map_c4049f5013604d4eb7ff9037bec93966);
+        
+    
+            marker_5fdcf1ed981a488092ef8ec6e5a78ef7.bindTooltip(
+                `<div>
+                     코소보
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f4cf93f76870404e81e46bf4b5482798 = L.marker(
+                [45.1, 15.2000001],
+                {}
+            ).addTo(map_c4049f5013604d4eb7ff9037bec93966);
+        
+    
+            marker_f4cf93f76870404e81e46bf4b5482798.bindTooltip(
+                `<div>
+                     크로아티아
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8cba4e26419a447ea06493073933c646 = L.marker(
+                [41.20438, 74.766098],
+                {}
+            ).addTo(map_c4049f5013604d4eb7ff9037bec93966);
+        
+    
+            marker_8cba4e26419a447ea06493073933c646.bindTooltip(
+                `<div>
+                     키르기즈
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_da036c1097d3490484ef70ea91dc0058 = L.marker(
+                [38.861034, 71.276093],
+                {}
+            ).addTo(map_c4049f5013604d4eb7ff9037bec93966);
+        
+    
+            marker_da036c1097d3490484ef70ea91dc0058.bindTooltip(
+                `<div>
+                     타지키스탄
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9798db1d241e429d816e7451b371e4e4 = L.marker(
+                [38.963745, 35.243322],
+                {}
+            ).addTo(map_c4049f5013604d4eb7ff9037bec93966);
+        
+    
+            marker_9798db1d241e429d816e7451b371e4e4.bindTooltip(
+                `<div>
+                     터키
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_71f5f05199a54af4a91cff5511bacc97 = L.marker(
+                [38.969719, 59.556278],
+                {}
+            ).addTo(map_c4049f5013604d4eb7ff9037bec93966);
+        
+    
+            marker_71f5f05199a54af4a91cff5511bacc97.bindTooltip(
+                `<div>
+                     투르크메니스탄
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_833d767f788b4fc6854f6251ce506fab = L.marker(
+                [13.444304, 144.793731],
+                {}
+            ).addTo(map_c4049f5013604d4eb7ff9037bec93966);
+        
+    
+            marker_833d767f788b4fc6854f6251ce506fab.bindTooltip(
+                `<div>
+                     괌
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9c486d8f6c874ce685e6d1ddd5b646de = L.marker(
+                [-40.900557, 174.885971],
+                {}
+            ).addTo(map_c4049f5013604d4eb7ff9037bec93966);
+        
+    
+            marker_9c486d8f6c874ce685e6d1ddd5b646de.bindTooltip(
+                `<div>
+                     뉴질랜드
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1994e8464caf41c49caf2556ba3233ae = L.marker(
+                [7.131474, 171.184478],
+                {}
+            ).addTo(map_c4049f5013604d4eb7ff9037bec93966);
+        
+    
+            marker_1994e8464caf41c49caf2556ba3233ae.bindTooltip(
+                `<div>
+                     마셜제도
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4ede024e1f4740d0bf0abeb458b68a72 = L.marker(
+                [7.425554, 150.550812],
+                {}
+            ).addTo(map_c4049f5013604d4eb7ff9037bec93966);
+        
+    
+            marker_4ede024e1f4740d0bf0abeb458b68a72.bindTooltip(
+                `<div>
+                     마이크로네시아연방
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_376be4f586624c819629d3b766594a21 = L.marker(
+                [-15.376706, 166.959158],
+                {}
+            ).addTo(map_c4049f5013604d4eb7ff9037bec93966);
+        
+    
+            marker_376be4f586624c819629d3b766594a21.bindTooltip(
+                `<div>
+                     바누아투
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c7e72f302a924068b1aa84ea7ca06b8f = L.marker(
+                [15.0979, 145.6739],
+                {}
+            ).addTo(map_c4049f5013604d4eb7ff9037bec93966);
+        
+    
+            marker_c7e72f302a924068b1aa84ea7ca06b8f.bindTooltip(
+                `<div>
+                     북마리아나
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0ed61c5755dd4a4da3d325d60382cfc8 = L.marker(
+                [45.509366, -73.74168499999999],
+                {}
+            ).addTo(map_c4049f5013604d4eb7ff9037bec93966);
+        
+    
+            marker_0ed61c5755dd4a4da3d325d60382cfc8.bindTooltip(
+                `<div>
+                     군도
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_26df6bc55a524d30b037a4050644838d = L.marker(
+                [-13.759029, -172.104629],
+                {}
+            ).addTo(map_c4049f5013604d4eb7ff9037bec93966);
+        
+    
+            marker_26df6bc55a524d30b037a4050644838d.bindTooltip(
+                `<div>
+                     사모아
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d9108de5561c49ba80817cd91e129617 = L.marker(
+                [-9.64571, 160.156194],
+                {}
+            ).addTo(map_c4049f5013604d4eb7ff9037bec93966);
+        
+    
+            marker_d9108de5561c49ba80817cd91e129617.bindTooltip(
+                `<div>
+                     솔로몬제도
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_bb47d26df46b49febba9246a77b07e7a = L.marker(
+                [-3.370417, -168.734039],
+                {}
+            ).addTo(map_c4049f5013604d4eb7ff9037bec93966);
+        
+    
+            marker_bb47d26df46b49febba9246a77b07e7a.bindTooltip(
+                `<div>
+                     키리바시
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4d922cb13b2a4d7eb51a3f4b496b2356 = L.marker(
+                [-21.178986, -175.198242],
+                {}
+            ).addTo(map_c4049f5013604d4eb7ff9037bec93966);
+        
+    
+            marker_4d922cb13b2a4d7eb51a3f4b496b2356.bindTooltip(
+                `<div>
+                     통가
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d269ee9c9a3f47579a3881b9b79dac61 = L.marker(
+                [-7.109534999999999, 177.64933],
+                {}
+            ).addTo(map_c4049f5013604d4eb7ff9037bec93966);
+        
+    
+            marker_d269ee9c9a3f47579a3881b9b79dac61.bindTooltip(
+                `<div>
+                     투발루
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_88f763754abf4a31a5b9f8fa4816d6a8 = L.marker(
+                [7.514979999999999, 134.58252],
+                {}
+            ).addTo(map_c4049f5013604d4eb7ff9037bec93966);
+        
+    
+            marker_88f763754abf4a31a5b9f8fa4816d6a8.bindTooltip(
+                `<div>
+                     팔라우
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6af596dbd612493691e412e0ad6d3e8d = L.marker(
+                [-17.713371, 178.065032],
+                {}
+            ).addTo(map_c4049f5013604d4eb7ff9037bec93966);
+        
+    
+            marker_6af596dbd612493691e412e0ad6d3e8d.bindTooltip(
+                `<div>
+                     피지
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3035d1f7b728443c9b5d3d848a3353a6 = L.marker(
+                [-25.274398, 133.775136],
+                {}
+            ).addTo(map_c4049f5013604d4eb7ff9037bec93966);
+        
+    
+            marker_3035d1f7b728443c9b5d3d848a3353a6.bindTooltip(
+                `<div>
+                     호주
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0fc5efa0f4154ac9a70b13273b784e9a = L.marker(
+                [-0.803689, 11.609444],
+                {}
+            ).addTo(map_c4049f5013604d4eb7ff9037bec93966);
+        
+    
+            marker_0fc5efa0f4154ac9a70b13273b784e9a.bindTooltip(
+                `<div>
+                     가봉
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_633ad43134c042ffbc832623816eb3c1 = L.marker(
+                [-30.559482, 22.937506],
+                {}
+            ).addTo(map_c4049f5013604d4eb7ff9037bec93966);
+        
+    
+            marker_633ad43134c042ffbc832623816eb3c1.bindTooltip(
+                `<div>
+                     남아프리카공화국
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e146826c163c44d69ce84f3366cde8eb = L.marker(
+                [6.428055, -9.429499000000002],
+                {}
+            ).addTo(map_c4049f5013604d4eb7ff9037bec93966);
+        
+    
+            marker_e146826c163c44d69ce84f3366cde8eb.bindTooltip(
+                `<div>
+                     라이베리아
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d816230db8ee4db7ab0e99c5eb99fe0a = L.marker(
+                [-29.609988, 28.233608],
+                {}
+            ).addTo(map_c4049f5013604d4eb7ff9037bec93966);
+        
+    
+            marker_d816230db8ee4db7ab0e99c5eb99fe0a.bindTooltip(
+                `<div>
+                     레소토
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_fe7a4d80ead74416ac583c498cdf370c = L.marker(
+                [31.791702, -7.092619999999999],
+                {}
+            ).addTo(map_c4049f5013604d4eb7ff9037bec93966);
+        
+    
+            marker_fe7a4d80ead74416ac583c498cdf370c.bindTooltip(
+                `<div>
+                     모로코
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0c699e87c2f64a84827f14c0da4f9206 = L.marker(
+                [-20.348404, 57.55215200000001],
+                {}
+            ).addTo(map_c4049f5013604d4eb7ff9037bec93966);
+        
+    
+            marker_0c699e87c2f64a84827f14c0da4f9206.bindTooltip(
+                `<div>
+                     모리셔스
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b12c7b16b4f64a13bb687a5188bb2d75 = L.marker(
+                [-18.665695, 35.529562],
+                {}
+            ).addTo(map_c4049f5013604d4eb7ff9037bec93966);
+        
+    
+            marker_b12c7b16b4f64a13bb687a5188bb2d75.bindTooltip(
+                `<div>
+                     모잠비크
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_756f705871204cf29f80e87cb168257f = L.marker(
+                [26.0667, 50.5577],
+                {}
+            ).addTo(map_c4049f5013604d4eb7ff9037bec93966);
+        
+    
+            marker_756f705871204cf29f80e87cb168257f.bindTooltip(
+                `<div>
+                     바레인
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b069a19e577b4ceca544f85fd1f27d92 = L.marker(
+                [9.30769, 2.315834],
+                {}
+            ).addTo(map_c4049f5013604d4eb7ff9037bec93966);
+        
+    
+            marker_b069a19e577b4ceca544f85fd1f27d92.bindTooltip(
+                `<div>
+                     베냉
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_75ac737deb074f9baaccbe71faf8863f = L.marker(
+                [-22.328474, 24.684866],
+                {}
+            ).addTo(map_c4049f5013604d4eb7ff9037bec93966);
+        
+    
+            marker_75ac737deb074f9baaccbe71faf8863f.bindTooltip(
+                `<div>
+                     보츠와나
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_637d1f9bcaa648e295166e36eda3ec11 = L.marker(
+                [0.18636, 6.613080999999999],
+                {}
+            ).addTo(map_c4049f5013604d4eb7ff9037bec93966);
+        
+    
+            marker_637d1f9bcaa648e295166e36eda3ec11.bindTooltip(
+                `<div>
+                     상투메프린시페
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_aae9d7a590b946fa9a91639afcf42d8b = L.marker(
+                [14.497401, -14.452362],
+                {}
+            ).addTo(map_c4049f5013604d4eb7ff9037bec93966);
+        
+    
+            marker_aae9d7a590b946fa9a91639afcf42d8b.bindTooltip(
+                `<div>
+                     세네갈
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c88d37b4677f4ad5a6810a87eac7558f = L.marker(
+                [-4.679574, 55.491977],
+                {}
+            ).addTo(map_c4049f5013604d4eb7ff9037bec93966);
+        
+    
+            marker_c88d37b4677f4ad5a6810a87eac7558f.bindTooltip(
+                `<div>
+                     세이셸
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2e025208be9b47f797e6f1ffa22b119a = L.marker(
+                [-26.522503, 31.465866],
+                {}
+            ).addTo(map_c4049f5013604d4eb7ff9037bec93966);
+        
+    
+            marker_2e025208be9b47f797e6f1ffa22b119a.bindTooltip(
+                `<div>
+                     에스와티니
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b05b515f0755419cabc2075286a79ea4 = L.marker(
+                [23.424076, 53.847818],
+                {}
+            ).addTo(map_c4049f5013604d4eb7ff9037bec93966);
+        
+    
+            marker_b05b515f0755419cabc2075286a79ea4.bindTooltip(
+                `<div>
+                     아랍에미리트
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6f54a57469cd4645900a4b5f46688d6d = L.marker(
+                [28.033886, 1.659626],
+                {}
+            ).addTo(map_c4049f5013604d4eb7ff9037bec93966);
+        
+    
+            marker_6f54a57469cd4645900a4b5f46688d6d.bindTooltip(
+                `<div>
+                     알제리
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6385e6ba590c4e29b92d2b70e0a2b9c4 = L.marker(
+                [-11.202692, 17.873887],
+                {}
+            ).addTo(map_c4049f5013604d4eb7ff9037bec93966);
+        
+    
+            marker_6385e6ba590c4e29b92d2b70e0a2b9c4.bindTooltip(
+                `<div>
+                     앙골라
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6ec929962ff249af9074be2e17ba3b00 = L.marker(
+                [21.4735329, 55.975413],
+                {}
+            ).addTo(map_c4049f5013604d4eb7ff9037bec93966);
+        
+    
+            marker_6ec929962ff249af9074be2e17ba3b00.bindTooltip(
+                `<div>
+                     오만
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_46f6fb5dc9444ecb8938b31607fd6d14 = L.marker(
+                [30.585164, 36.238414],
+                {}
+            ).addTo(map_c4049f5013604d4eb7ff9037bec93966);
+        
+    
+            marker_46f6fb5dc9444ecb8938b31607fd6d14.bindTooltip(
+                `<div>
+                     요르단
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ff7dfe684b4d426cac1f3bd47b23e732 = L.marker(
+                [32.427908, 53.688046],
+                {}
+            ).addTo(map_c4049f5013604d4eb7ff9037bec93966);
+        
+    
+            marker_ff7dfe684b4d426cac1f3bd47b23e732.bindTooltip(
+                `<div>
+                     이란
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0745bc7eb9744819bfdcf45343dc00cb = L.marker(
+                [31.046051, 34.851612],
+                {}
+            ).addTo(map_c4049f5013604d4eb7ff9037bec93966);
+        
+    
+            marker_0745bc7eb9744819bfdcf45343dc00cb.bindTooltip(
+                `<div>
+                     이스라엘
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_399b7104252c4447bcc71584575e562b = L.marker(
+                [26.820553, 30.802498],
+                {}
+            ).addTo(map_c4049f5013604d4eb7ff9037bec93966);
+        
+    
+            marker_399b7104252c4447bcc71584575e562b.bindTooltip(
+                `<div>
+                     이집트
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_26902630c472402c8d0ea4de7dbede2a = L.marker(
+                [16.5388, -23.0418],
+                {}
+            ).addTo(map_c4049f5013604d4eb7ff9037bec93966);
+        
+    
+            marker_26902630c472402c8d0ea4de7dbede2a.bindTooltip(
+                `<div>
+                     카보베르데
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_aca7f380c74d488696221f376ddab5c0 = L.marker(
+                [25.354826, 51.183884],
+                {}
+            ).addTo(map_c4049f5013604d4eb7ff9037bec93966);
+        
+    
+            marker_aca7f380c74d488696221f376ddab5c0.bindTooltip(
+                `<div>
+                     카타르
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d5917f1a812d47439672ab3ff1dbbed5 = L.marker(
+                [29.31166, 47.481766],
+                {}
+            ).addTo(map_c4049f5013604d4eb7ff9037bec93966);
+        
+    
+            marker_d5917f1a812d47439672ab3ff1dbbed5.bindTooltip(
+                `<div>
+                     쿠웨이트
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_29b8352fff8a45ce82bbe8fc7a6f217f = L.marker(
+                [-6.369028, 34.888822],
+                {}
+            ).addTo(map_c4049f5013604d4eb7ff9037bec93966);
+        
+    
+            marker_29b8352fff8a45ce82bbe8fc7a6f217f.bindTooltip(
+                `<div>
+                     탄자니아
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_be1185ef708144929e3f43a1eccaf2bb = L.marker(
+                [33.886917, 9.537499],
+                {}
+            ).addTo(map_c4049f5013604d4eb7ff9037bec93966);
+        
+    
+            marker_be1185ef708144929e3f43a1eccaf2bb.bindTooltip(
+                `<div>
+                     튀니지
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
